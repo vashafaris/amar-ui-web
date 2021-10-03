@@ -3,11 +3,15 @@
 @import '@amar-ui-web/shape/scss/variables';
 
 .CodeBlock {
-  position: relative;
-  padding: amb-spacing('medium');
+  border-radius: amb-border-radius('xlarge');
   font-size: amb-font-size('small');
-  font-family: amb-font-family('monospace');
-  border-radius: amb-border-radius('base');
-  overflow: auto;
-  margin: 0;
+  overflow: hidden;
+
+  > pre {
+    padding: amb-spacing('xlarge');
+    font-family: amb-font-family('monospace');
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow: auto;
+  }
 }
